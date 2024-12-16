@@ -28,6 +28,19 @@ namespace TorokDonat_gitFeladatok
             return szamlalo;
         }
 
+        static double F3(int[] tomb)
+        {
+            double atlag = 0;
+
+            for (int a = 0; a < tomb.Length; a++)
+            {
+                atlag += tomb[a];
+            }
+
+            atlag /= tomb.Length;
+            return atlag;
+        }
+
         static void Main(string[] args)
         {
         }
