@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -39,6 +40,18 @@ namespace TorokDonat_gitFeladatok
 
             atlag /= tomb.Length;
             return atlag;
+        }
+
+        static int[] F4(int[] tomb)
+        {
+            int[] paratlanok = new int[10];
+
+            for(int a = 0; a < tomb.Length; a++)
+            {
+                if (tomb[a] % 2 == 0) {tomb[a]++;}
+                paratlanok[a] = tomb[a];
+            }
+            return paratlanok;
         }
 
         static void Main(string[] args)
