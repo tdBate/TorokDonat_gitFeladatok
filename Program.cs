@@ -54,6 +54,21 @@ namespace TorokDonat_gitFeladatok
             return paratlanok;
         }
 
+        static void F5(int[] tomb)
+        {
+            Console.WriteLine("Ennyi db pozitív szám van a tömbben:" + F2(tomb));
+            Console.WriteLine("A tömb elemeinek átlaga: " + F3(tomb));
+            Console.WriteLine("A tömbből alkotott páratlan számok: ");
+
+            foreach (int a in F4(tomb))
+            {
+                Console.Write(a+", ");
+            }
+            Console.WriteLine();
+        }
+
+
+
         static void Main(string[] args)
         {
         }
