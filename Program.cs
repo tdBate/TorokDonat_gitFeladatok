@@ -15,7 +15,7 @@ namespace TorokDonat_gitFeladatok
             for (int a = 0; a < tomb.Length; a++)
             {
                 tomb[a] = rnd.Next(1,51);
-                Console.WriteLine(tomb[a]);
+                //Console.WriteLine(tomb[a]);
             }
         }
 
@@ -58,7 +58,7 @@ namespace TorokDonat_gitFeladatok
         {
             Console.WriteLine("Ennyi db pozitív szám van a tömbben:" + F2(tomb));
             Console.WriteLine("A tömb elemeinek átlaga: " + F3(tomb));
-            Console.WriteLine("A tömbből alkotott páratlan számok: ");
+            Console.Write("A tömbből alkotott páratlan számok: ");
 
             foreach (int a in F4(tomb))
             {
@@ -71,6 +71,9 @@ namespace TorokDonat_gitFeladatok
 
         static void Main(string[] args)
         {
+            int[] szamok = new int[10];
+            F1(szamok);
+            F5(szamok);
         }
     }
 }
